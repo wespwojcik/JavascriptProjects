@@ -1,87 +1,106 @@
-html
-{
-    font-size: 70%;
-    box-sizing: border-box;
+body {
+  background-image: url("../IMG/sunset-1651426.jpg");
 }
 
-* , *::before, *::after  {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 .calculator {
-    border: 1.2px solid darkslategrey;
-    border-radius: 7px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    width: 500px;
+  border: 1.2px solid darkslategrey;
+  border-radius: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
 }
 
 .calculator-screen {
-    width: 100%;
-    font-size: 5rem;
-    height: 80px;
-    border: none;
-    background-color: black;
-    color: white;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 7px 7px 0px 0px;
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 7px 7px 0px 0px;
 }
 
-button  {
-    height: 70px;
-    border-radius: 3px;
-    border: 1px solid darkslategrey;
-    background-color: transparent;
-    font-size: 3.2rem;
-    color:black;
-    background-image: linear-gradient(to bottom, trasperant, transperant 50% , rgba(0,0,0,.06));
-    text-shadow: 0 1px rgba(255,255,255,.4);
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4), inset 0 1px 0 0 
-    rgba(255, 255, 255 , 0.5) , inset 0 --1px 0 0 rgba(255, 255, 255, 0.5),
-    0 1px 0 0 rgba(255, 255, 255, .05);
+button {
+  height: 70px;
+  border-radius: 3px;
+  border: 1px solid darkslategrey;
+  background-color: orange;
+  opacity: 0.5;
+  font-size: 3.2rem;
+  color: black;
+  background-image: linear-gradient(
+    to bottom,
+    trasperant,
+    transperant 50%,
+    rgba(0, 0, 0, 0.06)
+  );
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+    inset 0 --1px 0 0 rgba(255, 255, 255, 0.5),
+    0 1px 0 0 rgba(255, 255, 255, 0.05);
 }
 
-botton:hover {
-    background-color: e1e1e1;
+button:hover {
+  background-color: #e1e1e1;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .operator {
-    color: black;
-    background-image: linear-gradient(to bottom, transperant, transperant 50%, rgba(0,0,0,.5));
-    background-color: lightgray;
+  color: black;
+  background-image: linear-gradient(
+    to bottom,
+    transperant,
+    transperant 50%,
+    rgba(0, 0, 0, 0.5)
+  );
+  background-color: lightgray;
 }
 
 .all-clear {
-    background-color: red;
-    border-color: darkslategrey;
-    color: #fff;
+  background-color: red;
+  border-color: darkslategrey;
+  color: #fff;
 }
 
-.all-clear:hover  {
-    background-color: darkred;
+.all-clear:hover {
+  background-color: darkred;
 }
 
 .equal-sign {
-    background-color: blue;
-    border-color: darkslategrey;
-    color: #fff;
-    height: 100%;
-    grid-area: 2/4/6/5;
+  background-color: blue;
+  border-color: darkslategrey;
+  color: #fff;
+  height: 100%;
+  grid-area: 2/4/6/5;
 }
 
 .equal-sign:hover {
-    background-color: darkblue;
+  background-color: darkblue;
 }
 
 .calculator-keys {
-    display: grid;
-    grid-template-columns: repeat(4. 1fr);
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-gap: 20px;
+  padding: 20px;
 }

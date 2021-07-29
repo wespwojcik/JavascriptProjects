@@ -37,12 +37,12 @@ function getr()
 function gettopping(runningtotal,text1) {
     var toppingtotal = 0;
     var selectedtopping = [];
-    var toppingarray = document.getElementById("toppings");
-    for (var j = 0; j < toppingarray; j++)
+    var toppingarray = document.getElementsByClassName("toppings");
+    for (var j = 0; j < toppingarray.length; j++)
     {
         if (toppingarray[j].checked)
         {
-            selectedtopping.push(toppingarray[i].value);
+            selectedtopping.push(toppingarray[j].value);
             console.log("selected topping item: ("+toppingarray[j].value+")");
         }
     }

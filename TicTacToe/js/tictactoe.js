@@ -23,11 +23,11 @@ function placeXOrO(squareNumber)
                 {
                     //if activeplayer is equal to 'x' the x.png is placed 
                     //in html
-                    select.style.backgroundImage= 'url("images/mark-x.png")';
+                    select.style.backgroundImage= 'url("images/x.png")';
                 }
                 else {
                     //change the activePlayer to 'O', the o.png is placed in HTML.
-                    select.style.backgroundImage = 'url("images/play.png")';
+                    select.style.backgroundImage = 'url("images/o.png")';
                 }
                 //squareNumber and activePlayer are concatenated togethter and added to array
                 selectedSquares.push(squareNumber + activePlayer);
